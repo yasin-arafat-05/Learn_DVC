@@ -2,7 +2,7 @@
 import os
 import pandas as pd
 
-# <-------- initial datafile ------------->
+# <-------- initial datafile V1 ------------->
 info = {
     "Name" : ["Yasin","Arafat","Yasin Arafat"],
     "Age"  : [25,30,35],
@@ -10,7 +10,9 @@ info = {
 }
 df = pd.DataFrame(data=info)
 
-
+# <-------- Add new  data: V2 ------------->
+new_row_loc = {"Name":"GF1","Age":22,"City":"Dhaka"}
+df.loc[len(df.index)] = new_row_loc
 
 # <--------- save the data ------------>
 data_dir = 'data'
