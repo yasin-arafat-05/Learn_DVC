@@ -19,3 +19,4 @@ os.makedirs(name=data_dir,exist_ok=True)
 file_path = os.path.join("data","sample_data_v1.csv")
 df.to_csv(path_or_buf=file_path,index=False)
 print(f"csv file is saved in file path: {file_path}")
+
